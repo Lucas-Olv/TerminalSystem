@@ -29,5 +29,8 @@ public:
 	void ExistingUserLoginValidation();
 	void NewUserCreationScreen();
 	void TerminalInfoScreen();
+	void Classifiedinfo();
+	void NasaArchives();
+	void MilitaryFiles();
 };
 

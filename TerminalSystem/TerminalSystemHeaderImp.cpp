@@ -106,12 +106,33 @@ void TerminalSystem::NewUserCreationScreen()
 
 void TerminalSystem::TerminalInfoScreen()
 {
-	std::cout << "Seja bem vindo ao terminal. Selecione uma das opções a seguir:";
+	std::cout << "Seja bem vindo ao terminal. Selecione uma das opções a seguir:" << std::endl;
 	do
 	{
 		std::cout << "1. Classified Info" << std::endl;
 		std::cout << "2. Nasa archives" << std::endl;
 		std::cout << "3. Military files" << std::endl;
+		std::cin >> UserChoice;
+
+		if (UserChoice == "1")
+		{
+			std::cout << "Option 1";
+			break;
+		}
+		else if (UserChoice == "2")
+		{
+			std::cout << "Option 2";
+			break;
+		}
+		else if (UserChoice == "3")
+		{
+			std::cout << "Option 3";
+			break;
+		}
+		else
+		{
+			std::cout << "Opção inválida. Tente novamente." << std::endl;
+		}
 
 	} while (true);
 }
