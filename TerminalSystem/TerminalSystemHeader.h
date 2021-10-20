@@ -16,7 +16,7 @@ private:
 	std::string NewUserPassword = "";
 	std::string UserChoice = "";
 	int MaxLoginTries = 0;
-
+	int UserFileSelection = 0;
 
 
 
@@ -29,7 +29,7 @@ public:
 	void ExistingUserLoginValidation();
 	void NewUserCreationScreen();
 	void TerminalInfoScreen();
-	void Classifiedinfo();
+	void ClassifiedInfo();
 	void NasaArchives();
 	void MilitaryFiles();
 };
