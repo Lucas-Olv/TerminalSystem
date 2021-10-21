@@ -20,7 +20,7 @@ TerminalSystem::~TerminalSystem()
 int TerminalSystem::LoginScreen()
 {
 
-	std::cout << "Terminal System v0.5.0" << std::endl << std::endl;
+	std::cout << "Terminal System v0.6.0" << std::endl << std::endl;
 	std::cout << "1. Usuário existente." << std::endl << "2. Novo usuário." << std::endl << std::endl;
 	std::cout << "Digite o que deseja fazer: ";
 	do
@@ -161,14 +161,19 @@ void TerminalSystem::ClassifiedInfo()
 			break;
 
 		case 9421:
+			std::cout << std::endl << "C:9421 - Ártico" << std::endl;
+			std::cout << "Este arquivo foi movido." << std::endl;
 			conditionChecker = false;
 			break;
 
 		case 2109:
+			std::cout << std::endl << "c:2109 --. --- ...- . .-. -. -- . -. - / .-. . .--. - .. .-.. .. .- -. ... / ..-. .. .-.. . ...";
+			std::cout << std::endl << "Não é possível traduzir o arquivo." << std::endl;
 			conditionChecker = false;
 			break;
 
 		case 4476:
+			std::cout << std::endl << "C:4476 <Corrupted File>" << std::endl;
 			conditionChecker = false;
 			break;
 
@@ -182,7 +187,34 @@ void TerminalSystem::ClassifiedInfo()
 
 void TerminalSystem::NasaArchives()
 {
+	bool conditionChecker = true;
+	std::cout << std::endl << "Arquivos NASA. Apenas funcionários autorizados." << std::endl;
 
+	do
+	{
+		std::cout << "N: 2319  C: 4321  C:1094  C:9706" << std::endl;
+		std::cout << "Digite o código do arquivo desejado: ";
+		std::cin >> UserFileSelection;
+
+		switch (UserFileSelection)
+		{
+		case 2319:
+			conditionChecker = false;
+			break;
+		case 4321:
+			conditionChecker = false;
+			break;
+		case 1094:
+			conditionChecker = false;
+			break;
+		case 9706:
+			conditionChecker = false;
+			break;
+
+		default:
+			break;
+		}
+	} while (conditionChecker == true);
 }
 
 void TerminalSystem::MilitaryFiles()
