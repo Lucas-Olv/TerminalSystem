@@ -20,7 +20,7 @@ TerminalSystem::~TerminalSystem()
 int TerminalSystem::LoginScreen()
 {
 
-	std::cout << "Terminal System v0.6.0" << std::endl << std::endl;
+	std::cout << "Terminal System v0.7.0" << std::endl << std::endl;
 	std::cout << "1. Usuário existente." << std::endl << "2. Novo usuário." << std::endl << std::endl;
 	std::cout << "Digite o que deseja fazer: ";
 	do
@@ -192,22 +192,34 @@ void TerminalSystem::NasaArchives()
 
 	do
 	{
-		std::cout << "N: 2319  C: 4321  C:1094  C:9706" << std::endl;
+		std::cout << "N: 2319  N: 4321  N:1094  N:9706" << std::endl;
 		std::cout << "Digite o código do arquivo desejado: ";
 		std::cin >> UserFileSelection;
 
 		switch (UserFileSelection)
 		{
 		case 2319:
+			std::cout << std::endl << "N:2319 Dimensão de monstros em marte" << std::endl;
+			std::cout << "Dimensão de monstros presente em marte, relatórios dizem que esses monstros usam energia geradas a partir do medo de algumas pessoas.";
+			std::cout << "#$$%%¨&#@#%35235¨$#654&568569867*%65¨&$53423R#@RE@#42" << std::endl;
+			std::cout << "As informações seguintes são classificadas como confidenciais, visualização não permitida." << std::endl;
 			conditionChecker = false;
 			break;
 		case 4321:
+			std::cout << std::endl << "N:4321 OVNIs";
+			std::cout << "Os registros de OVNIs estão descritos no formato %%%%$#@$@@$@@#$@...";
+			std::cout << "Arquivo parcialmente criptografado, não é possível abrir o arquivo." << std::endl;
 			conditionChecker = false;
 			break;
 		case 1094:
+			std::cout << std::endl << "N:1094 Indisponível" << std::endl;
+			std::cout << "Arquivo foi movido ou deletado." << std::endl;
 			conditionChecker = false;
 			break;
 		case 9706:
+			std::cout << std::endl << "N:9706 Projeto L.U.A";
+			std::cout << "Arquivo dedicado ao retorno do homem para a lua.";
+			std::cout << "Arquivo criptografado, visualização absolutamente restrita apenas a determinadas pessoas.";
 			conditionChecker = false;
 			break;
 
