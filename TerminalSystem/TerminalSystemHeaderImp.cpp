@@ -20,7 +20,7 @@ TerminalSystem::~TerminalSystem()
 int TerminalSystem::LoginScreen()
 {
 
-	std::cout << "Terminal System v0.7.0" << std::endl << std::endl;
+	std::cout << "Terminal System v1.0.0" << std::endl << std::endl;
 	std::cout << "1. Usuário existente." << std::endl << "2. Novo usuário." << std::endl << std::endl;
 	std::cout << "Digite o que deseja fazer: ";
 	do
@@ -231,6 +231,6 @@ void TerminalSystem::NasaArchives()
 
 void TerminalSystem::MilitaryFiles()
 {
-
+	std::cout << std::endl << "Arquivos militares não podem ser acessados por este terminal. Encerrando..." << std::endl;
 }
 
